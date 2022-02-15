@@ -1,0 +1,4 @@
+#Fri Feb 11 00:28:16 IST 2022
+base.0=/home/raramuri/AndroidStudioProjects/android-kotlin-drawing-custom-views-master/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
