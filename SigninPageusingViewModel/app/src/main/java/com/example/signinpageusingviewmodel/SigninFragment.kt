@@ -1,6 +1,5 @@
 package com.example.signinpageusingviewmodel
 
-import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -8,7 +7,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
-import com.example.signinpageusingviewmodel.databinding.ActivityMainBinding
 import com.example.signinpageusingviewmodel.databinding.FragmentSigninBinding
 
 class SigninFragment : Fragment() {
@@ -23,7 +21,7 @@ class SigninFragment : Fragment() {
     ): View? {
         Log.i("GameFragment", "Called ViewModelProvider.get")
 
-        val secondfrag = successFragment()
+        val secondfrag = FragmentRecycler()
         binding = FragmentSigninBinding.inflate(layoutInflater)
         (binding.root)
 
