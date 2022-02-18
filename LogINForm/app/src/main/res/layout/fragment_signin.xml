@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SigninFragment">
+
+
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="#7BB1F4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="91dp"
+        android:layout_height="105dp"
+        android:src="@drawable/login2"
+        android:background="#204E4E"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:elevation="10dp"
+       android:layout_margin="24dp"
+        android:background="@drawable/shapesoffragments"
+        android:hint="Enter Email"
+        android:layout_marginTop="80dp"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#3D4241"
+        android:padding="16dp"
+
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="104dp"
+        android:background="@drawable/shapesoffragments"
+        android:elevation="10dp"
+        android:hint="Enter Password"
+        android:inputType="textEmailAddress"
+        android:padding="16dp"
+        android:textColorHint="#3D4241"
+
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et1" />
+
+    <Button
+        android:id="@+id/signBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:backgroundTint="#5690EF"
+        android:hint="Sign In"
+        android:textColor="#88E4DB"
+        android:textColorHint="#ffffff"
+        android:background="@drawable/shapesoffragments"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et2"
+        app:layout_constraintVertical_bias="0.504" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

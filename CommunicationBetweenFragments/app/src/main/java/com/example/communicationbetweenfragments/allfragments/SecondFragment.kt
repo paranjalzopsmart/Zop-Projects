@@ -21,6 +21,7 @@ class SecondFragment : Fragment() {
         val view= inflater.inflate(R.layout.fragment_second, container, false)
         val msg:EditText = view.findViewById(R.id.textMSg)
 
+
         displayMessage = arguments?.getString("message")
         msg.setText(displayMessage)
 
